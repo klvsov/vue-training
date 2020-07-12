@@ -56,7 +56,8 @@
                     <input v-model="guests[index]" 
                            type="text" 
                            class="form-control" 
-                           id="inputGuest">
+                           id="inputGuest"
+                           :id="'guest'+'-'+(index+1)">
                 </div>
                 <button @click="formSend()" type="submit" class="btn btn-primary">Send Data</button>
                 <p></p>
